@@ -1,0 +1,21 @@
+<ion-view title="Crear usuario" id="page3">
+  <ion-content padding="true" class="has-header fondo">
+    <form id="signup-form2" class="list">
+      <ion-list id="signup-list2">
+        <label class="item item-input" id="signup-input3">
+          <span class="input-label">Nombre</span>
+          <input type="text" placeholder="" ng-model="user.nombre">
+        </label>
+        <label class="item item-input" id="signup-input4">
+          <span class="input-label">email</span>
+          <input type="email" placeholder="" ng-model="user.email">
+        </label>
+        <label class="item item-input" id="signup-input5">
+          <span class="input-label">Password</span>
+          <input type="password" placeholder="" ng-model="user.pass">
+        </label>
+      </ion-list>
+      <button id="signup-button3" class="button button-balanced button-block" ng-click="signup()">Registrarse</button>
+    </form>
+  </ion-content>
+</ion-view>

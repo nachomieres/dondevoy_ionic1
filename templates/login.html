@@ -1,0 +1,28 @@
+<ion-view title="Login" id="page2" class="pane">
+  <ion-content padding="true" class="has-header fondo">
+    <form id="login-form1" class="list" style="padding-top: 60%">
+      <ion-list id="login-list1">
+        <label class="item item-input" id="login-input1">
+          <span class="input-label">email</span>
+          <input type="email" placeholder="" ng-model="user.email">
+        </label>
+        <label class="item item-input" id="login-input2">
+          <span class="input-label">Password</span>
+          <input type="password" placeholder="" ng-model="user.pass">
+        </label>
+      </ion-list>
+      <!-- <div class="spacer" style="height: 40px;"></div> -->
+      <button id="login-button1" class="button button-calm  button-block" ng-click="login()">Entrar</button>
+      <a ui-sref="signup" id="login-button2" class="button button-positive  button-block button-clear">O crea una cuenta</a>
+
+    </form>
+  </ion-content>
+  <ion-footer-bar class="bar-stable" >
+  <button class="button button-positive button-left"
+          ng-click="loginFB()" >Entrar con <span class="ion-social-facebook"</span>
+  </button >
+  <button class="button button-assertive button-right"
+          ng-click="loginGoogle()" >Entrar con <span class="ion-social-google"</span>
+  </button >
+</ion-footer-bar >
+</ion-view>
